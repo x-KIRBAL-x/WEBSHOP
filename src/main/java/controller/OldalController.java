@@ -183,12 +183,9 @@ public class OldalController {
 
     //Adatbázis megnyitása
     public void nyitadatb(ActionEvent actionEvent) throws IOException {
-        int azon;
         List<Adatbazis> adatok = getadatok();
         for (int i=0;i<adatok.size();i++){
             System.out.println(adatok.get(i));
         }
-        azon=maxID();
-        System.out.println(azon);
     }
 }

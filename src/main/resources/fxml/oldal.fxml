@@ -12,7 +12,7 @@
           <Button fx:id="adatbázis" mnemonicParsing="false" onAction="#nyitadatb" prefHeight="26.0" prefWidth="156.0" text="Lekérdez" />
         </buttons>
       </ButtonBar>
-      <Label fx:id="hibasadat" layoutX="48.0" layoutY="464.0" prefHeight="31.0" prefWidth="85.0" textFill="RED" />
+      <Label fx:id="hibasadat" layoutX="48.0" layoutY="470.0" prefHeight="20.0" prefWidth="120.0" textFill="RED" />
       <ButtonBar layoutX="652.0" layoutY="495.0" prefHeight="40.0" prefWidth="126.0">
         <buttons>
           <Button fx:id="megrendel" mnemonicParsing="false" onAction="#rendel" prefHeight="26.0" prefWidth="114.0" text="Megrendel" />
@@ -41,13 +41,13 @@
       <Label layoutX="563.0" layoutY="33.0" text="200 000 Ft" />
       <Label layoutX="167.0" layoutY="258.0" text="35 000 Ft" />
       <Label layoutX="563.0" layoutY="258.0" text="150 000 Ft" />
-      <HBox layoutX="48.0" layoutY="503.0" prefHeight="25.0" prefWidth="600.0" spacing="10.0">
+      <HBox layoutX="50.0" layoutY="500.0" spacing="30.0">
          <children>
-            <TextField fx:id="nev" prefHeight="25.0" prefWidth="190.0" promptText="neve" />
-            <TextField fx:id="cim" prefHeight="25.0" prefWidth="190.0" promptText="cime" />
-            <TextField fx:id="email" prefHeight="25.0" prefWidth="190.0" promptText="email" />
+            <TextField fx:id="nev" prefHeight="26.0" prefWidth="220.0" promptText="neve" />
+            <TextField fx:id="email" prefHeight="26.0" prefWidth="220.0" promptText="email" />
          </children>
       </HBox>
+      <TextField fx:id="cim" layoutX="50.0" layoutY="540.0" prefHeight="26.0" prefWidth="470.0" promptText="cime" />
       <HBox alignment="CENTER" layoutX="97.0" layoutY="206.0" prefHeight="25.0" prefWidth="181.0" spacing="5.0">
          <children>
             <CheckBox fx:id="box1" mnemonicParsing="false" prefHeight="17.0" prefWidth="108.0" text="hozzáad" />
@@ -76,6 +76,6 @@
             <Label text="db" />
          </children>
       </HBox>
-      <Label fx:id="osszegzo" layoutX="48.0" layoutY="555.0" prefHeight="17.0" prefWidth="140.0" />
+      <Label fx:id="osszegzo" layoutX="48.0" layoutY="573.0" prefHeight="20.0" prefWidth="170.0" />
    </children>
 </AnchorPane>
