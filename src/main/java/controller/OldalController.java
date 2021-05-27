@@ -3,14 +3,9 @@ package controller;
 import adatb.Adatbazis;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -23,7 +18,7 @@ public class OldalController {
 
 
     @FXML
-    private Label hadat;
+    private Label hibasadat;
     @FXML
     private Label osszegzo;
     @FXML
@@ -68,12 +63,12 @@ public class OldalController {
         try {
             darab = Integer.parseInt(s);
         }catch (Exception e) {
-            hadat.setText("Hibás kitöltés!");
+            hibasadat.setText("Hibás kitöltés!");
             ok=false;
         }
         ok=true;
         if (darab<1) {
-            hadat.setText("Hibás kitöltés!");
+            hibasadat.setText("Hibás kitöltés!");
             darab=0;
             ok=false;
             return darab;
@@ -135,7 +130,7 @@ public class OldalController {
 
             if (nev.getText().isEmpty() || cim.getText().isEmpty() || email.getText().isEmpty() || !email.getText().contains("@")
                     || !email.getText().contains(".") || ok == false ) {
-                hadat.setText("Hibás kitöltés!");
+                hibasadat.setText("Hibás kitöltés!");
                 ok = false;
             }
             else {
@@ -143,7 +138,7 @@ public class OldalController {
                 neve = nev.getText();
                 cime = cim.getText();
                 ecim = email.getText();
-                hadat.setText("");
+                hibasadat.setText("");
 
                 if (box1.isSelected() == true && ok)
                     osszeg += osszead(db1.getText())*termek1;
@@ -159,7 +154,7 @@ public class OldalController {
             }
         }
         else {
-            hadat.setText("Hibás kitöltés!");
+            hibasadat.setText("Hibás kitöltés!");
             ok = false;
         }
         if (ok) {

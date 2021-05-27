@@ -12,8 +12,8 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Data
 @Entity
+@Data
 public class Adatbazis {
 
     @Id
