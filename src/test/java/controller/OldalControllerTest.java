@@ -11,7 +11,7 @@ class OldalControllerTest {
     OldalController undertest;
 
     @BeforeEach
-    void setUp() {
+    void setUp() { undertest = new OldalController();
     }
 
     @AfterEach
