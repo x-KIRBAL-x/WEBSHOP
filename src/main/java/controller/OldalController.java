@@ -110,7 +110,7 @@ public class OldalController {
         }
     }
 
-    //Azonosító keresés
+    //Legnagyobb azonosító keresés
     public int maxID(){
         EntityManager em = emf.createEntityManager();
         Query query = em.createQuery("SELECT A FROM Adatbazis A WHERE id = (SELECT MAX(A.id) FROM Adatbazis A)");
@@ -121,7 +121,7 @@ public class OldalController {
         return (Integer)id;
     }
 
-
+    //Rendelés leadása
     @FXML
     private void rendel(javafx.event.ActionEvent actionEvent){
         if (box1.isSelected() == true || box2.isSelected() == true || box3.isSelected() == true || box4.isSelected() == true){
@@ -182,7 +182,7 @@ public class OldalController {
     }
 
     //Adatbázis megnyitása
-    public void nyitadatb(ActionEvent actionEvent) throws IOException {
+    public void adatblekerdezese(ActionEvent actionEvent){
         List<Adatbazis> adatok = getadatok();
         for (int i=0;i<adatok.size();i++){
             System.out.println(adatok.get(i));

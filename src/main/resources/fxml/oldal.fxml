@@ -9,7 +9,7 @@
 
       <ButtonBar layoutX="652.0" layoutY="535.0" prefHeight="40.0" prefWidth="126.0">
         <buttons>
-          <Button fx:id="adatbázis" mnemonicParsing="false" onAction="#nyitadatb" prefHeight="26.0" prefWidth="156.0" text="Lekérdez" />
+          <Button fx:id="adatbázis" mnemonicParsing="false" onAction="#adatblekerdezese" prefHeight="26.0" prefWidth="156.0" text="Lekérdez" />
         </buttons>
       </ButtonBar>
       <Label fx:id="hibasadat" layoutX="48.0" layoutY="470.0" prefHeight="20.0" prefWidth="120.0" textFill="RED" />
